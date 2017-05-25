@@ -43,10 +43,10 @@ class SSP {
 
 				// Is there a formatter?
 				if ( isset( $column['formatter'] ) ) {
-					$row[ $column['dt'] ] = $column['formatter']( $data[$i][ $column['db'] ], $data[$i] );
+					$row[ $column['db'] ] = $column['formatter']( $data[$i][ $column['dt'] ], $data[$i] );
 				}
 				else {
-					$row[ $column['dt'] ] = $data[$i][ $columns[$j]['db'] ];
+					$row[ $column['db'] ] = $data[$i][ $column['dt'] ];
 				}
 			}
 
